@@ -1,18 +1,11 @@
 
-let liste=document.getElementsByTagName("ul");
-let items=document.getElementsByTagName("li");
+let liste = document.getElementsByTagName("ul");
+let items = document.getElementsByTagName("li");
+let a = 0;
 
-
-function change_liste()
-{
-
-
-    for (let i=0; i<items.length; i++)
-    {
-        liste.setAttribute("type", "circle");
-    items[i].innerText="blabla";
-
-    }
-
+while (a < 7) {
+    console.log("A vaut actuellement " + a);
+    a++;
+    items[a].style.listStyleType = "circle";
+    items[a].innerHTML = "blablabla";
 }
-
